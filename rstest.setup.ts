@@ -1,1 +1,1 @@
-import './src'
+import 'rstest-canvas-mock';

@@ -1,4 +1,3 @@
-import { createRequire } from 'node:module';
 import { afterAll, rs } from '@rstest/core';
 
 declare global {
@@ -13,7 +12,6 @@ afterAll(() => {
   delete global.window.jest;
 });
 
-const require = createRequire(import.meta.url);
 const { default: getCanvasWindow } = require('jest-canvas-mock/lib/window.js');
 
 const apis = [
