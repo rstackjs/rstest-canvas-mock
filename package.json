@@ -1,6 +1,6 @@
 {
   "name": "rstest-canvas-mock",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Mock canvas in Rstest",
   "type": "module",
   "license": "MIT",
