@@ -2,9 +2,16 @@
   "name": "rstest-canvas-mock",
   "version": "0.0.6",
   "description": "Mock canvas in Rstest",
-  "type": "module",
+  "bugs": {
+    "url": "https://github.com/rspack-contrib/rstest-canvas-mock/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rspack-contrib/rstest-canvas-mock"
+  },
   "license": "MIT",
   "sideEffects": true,
+  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -18,34 +25,27 @@
     "dist"
   ],
   "scripts": {
-    "build": "rslib build",
-    "prepare": "npm run build",
-    "test": "rstest run -c rstest.config.ts && rstest run -c rstest.cjs.config.ts",
-    "check": "biome check --write",
-    "dev": "rslib build --watch",
-    "format": "biome format --write",
-    "bump": "npx bumpp"
-  },
-  "peerDependencies": {
-    "@rstest/core": "*"
+    "build": "rs lib",
+    "bump": "pnpx bumpp",
+    "check": "rs check",
+    "dev": "rs lib -w",
+    "format": "rs fmt",
+    "lint": "rs lint",
+    "prepare": "rs hooks && rs lib",
+    "test": "rs test"
   },
   "dependencies": {
     "jest-canvas-mock": "~2.5.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.0.0",
-    "@rslib/core": "^0.10.5",
+    "@rstest/core": "^0.11.12",
     "@types/node": "^22.16.0",
-    "typescript": "^5.8.3",
-    "@rstest/core": "^0.11.2",
-    "jsdom": "^29.1.1"
+    "jsdom": "^29.1.1",
+    "rstack": "^0.7.2",
+    "typescript": "^5.8.3"
   },
-  "packageManager": "pnpm@10.15.0",
-  "bugs": {
-    "url": "https://github.com/rspack-contrib/rstest-canvas-mock/issues"
+  "peerDependencies": {
+    "@rstest/core": "*"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rspack-contrib/rstest-canvas-mock"
-  }
+  "packageManager": "pnpm@10.15.0"
 }

@@ -14,18 +14,18 @@ npm install rstest-canvas-mock -D
 
 ```ts
 // rstest.setup.ts
-import 'rstest-canvas-mock'
+import 'rstest-canvas-mock';
 ```
 
 2. In your `rstest.config.ts` file, create a `setupFiles` array and add that file:
 
 ```ts
-import { defineConfig } from '@rstest/core'
+import { defineConfig } from '@rstest/core';
 
 export default defineConfig({
   setupFiles: ['./rstest.setup.ts'],
   testEnvironment: 'jsdom',
-})
+});
 ```
 
 ## Mock Strategy
