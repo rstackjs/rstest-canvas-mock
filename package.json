@@ -41,11 +41,11 @@
     "@rstest/core": "^0.11.12",
     "@types/node": "^22.16.0",
     "jsdom": "^29.1.1",
-    "rstack": "^0.7.2",
+    "rstack": "^0.9.5",
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
     "@rstest/core": "*"
   },
-  "packageManager": "pnpm@10.15.0"
+  "packageManager": "pnpm@12.18.0"
 }
