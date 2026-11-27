@@ -1,0 +1,12 @@
+allowBuilds:
+  core-js: false
+
+minimumReleaseAgeExclude:
+  - '@rslib/*'
+  - '@rstackjs/*'
+  - 'rsbuild-plugin-*'
+  - rstack
+permissions:
+  rstack:
+    skills:
+      - rstack-cli-docs
